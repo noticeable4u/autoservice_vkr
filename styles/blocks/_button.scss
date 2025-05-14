@@ -1,0 +1,14 @@
+.button {
+  @include flex-center(true);
+
+  height: var(--button-height);
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  font-weight: 700;
+  border: none;
+  border-radius: var(--border-radius-small);
+
+  @include hover {
+    background-color: var(--color-dark);
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>OCG Studio</title>
+  <link rel="stylesheet" href="./styles/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="/" class="header__logo logo">
+        <img
+          class="logo__image"
+          src="./images/logo.png"
+          alt="OCG logo"
+          width="119" height="62" loading="lazy"
+        />
+      </a>
+      <nav class="header__menu hidden-mobile">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link">Примеры работ</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link">Услуги</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="header__button button hidden-mobile"
+        type="button"
+      >
+        Личный кабинет
+      </button>
+      <button
+        class="header__burger-button burger-button visible-mobile"
+        type="button"
+        onclick="mobileOverlay.showModal()"
+      >
+        <span class="visually-hidden">Открыть навигационное меню</span>
+      </button>
+    </div>
+  </header>
+  <main class="content">
+    <section class="section-slogan container">
+      <div class="section-slogan__body">
+        <h1 class="section-slogan__title visually-hidden">Наш слоган и наши преимущества</h1>
+        <div class="section-slogan__header">
+          <div class="section-slogan__description">
+            <h2 class="section-slogan__description-light">
+            Звук, завораживающий душу.<br> 
+            Тишина, дарующая покой.
+            </h2>
+            <h2 class="section-slogan__description-accent">
+              Ваш автомобиль — наше мастерство!
+            </h2>
+          </div>
+          <img
+            class="section-slogan__logo"
+            src="./images/slogan/car-picture.png"
+            alt=""
+            width="431" height="auto" loading="lazy"
+          />
+        </div>
+        <div class="section-slogan__card">
+          <div class="section-slogan__card-item">
+            <img
+              class="section-slogan__card-image"
+              src="./images/slogan/cards/1.svg"
+              alt=""
+              width="55" height="" loading="lazy"
+            />
+            <p class="section-slogan__card-description">Профессиональная<br>установка</p>
+          </div>
+          <div class="section-slogan__card-item">
+            <img
+              class="section-slogan__card-image"
+              src="./images/slogan/cards/2.svg"
+              alt=""
+              width="55" height="" loading="lazy"
+            />
+            <p class="section-slogan__card-description">Индивидуальный<br>подход</p>
+          </div>
+          <div class="section-slogan__card-item">
+            <img
+              class="section-slogan__card-image"
+              src="./images/slogan/cards/3.svg"
+              alt=""
+              width="55" height="" loading="lazy"
+            />
+            <p class="section-slogan__card-description">Доступность и<br>прозрачность</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Модалка с личным кабинетом -->
+  <div id="modal-login" class="modal visually-hidden">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog">
+      <button
+        type="button"
+        class="modal__dialog-close"
+        data-close-modal
+      >&times;
+      </button>
+      <div
+        id="modal-login__content"
+        class="modal__dialog-content"
+      >
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@import 
+  'normalize', 
+  'fonts', 
+  'mixins', 
+  'media', 
+  'variables', 
+  'utils', 
+  'globals';
+
+@import 
+  '../blocks/header',
+  '../blocks/button',
+  '../blocks/section-slogan',
+  '../blocks/modal';

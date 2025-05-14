@@ -1,0 +1,62 @@
+.header {
+  padding-top: 25px;
+
+  @include tablet {
+    padding-top: 15px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  &__logo {
+    max-height: 62px;
+    width: 119px;
+    
+    @include hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    &-list {
+      display: flex;
+      column-gap: 100px;
+
+      @include tablet {
+        column-gap: 50px;
+      }
+    }
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      height: 30px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        translate: -50%;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition-duration: 0.2s;
+      }
+
+      @include hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
